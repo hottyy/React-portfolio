@@ -74,7 +74,7 @@ const Projects = () => {
                 <p className="text-gray-600 mb-4">{project.description}</p>
                 <div className="flex items-center space-x-2 mb-2">
                   <span className="font-semibold text-gray-700">Technologies:</span>
-                  <ul className="flex space-x-2">
+                  <ul className="flex flex-wrap space-x-2">
                     {project.technologies.map((tech, techIndex) => (
                       <li key={techIndex} className="bg-blue-100 text-blue-700 rounded-full px-3 py-1 text-sm font-medium">
                         {tech}
