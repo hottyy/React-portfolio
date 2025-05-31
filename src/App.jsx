@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import Technologies from "./components/Technologies";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
+import { Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
@@ -15,17 +16,17 @@ function App() {
         </div>
       </div>
 
-
       <div className="container mx-auto px-8">
         <Navbar />
-        <Hero />
-        <About />
-        <Technologies />
-        <Projects />
-        <Contact />
+        <Routes>
+          <Route path="/" element={<Hero />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/technologies" element={<Technologies />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
       </div>
     </>
-
   );
 }
 
