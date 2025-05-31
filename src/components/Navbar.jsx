@@ -13,27 +13,30 @@ const Navbar = () => {
         </Link>
       </div>
       <div className="m-8 flex items-center justify-center text-2xl gap-4">
-        <Link
-          to={{ pathname: "http://www.linkedin.com/in/tebogo-mokwena-2a8887209" }}
+        <a
+          href="http://www.linkedin.com/in/tebogo-mokwena-2a8887209"
+          rel="noreferrer"
           target="_blank"
           className="text-gray-600 hover:text-blue-600"
         >
           <FaLinkedin size={24} />
-        </Link>
-        <Link
-          to={{ pathname: "https://github.com/hottyy" }}
+        </a>
+        <a
+          href="https://github.com/hottyy"
+          rel="noreferrer"
           target="_blank"
           className="text-gray-600 hover:text-gray-200"
         >
           <FaGithub size={24} />
-        </Link>
-        <Link
-          to={{ pathname: "https://www.instagram.com/shaun__mok" }}
+        </a>
+        <a
+          href="https://www.instagram.com/shaun__mok"
+          rel="noreferrer"
           target="_blank"
           className="text-gray-600 hover:text-pink-500"
         >
           <FaInstagram size={24} />
-        </Link>
+        </a>
       </div>
     </nav>
   );
