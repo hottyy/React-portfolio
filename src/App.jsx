@@ -4,12 +4,11 @@ import Navbar from "./components/Navbar";
 import Technologies from "./components/Technologies";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
-import { Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
     <>
-      <div className="relative h-full w-full bg-transparent"> {/* Changed bg-slate-950 to bg-transparent */}
+      <div className="relative h-full w-full bg-transparent">
         <div className="absolute bottom-0 left-[-20%] right-0 top-[-10%] h-[500px] w-[500px] rounded-full bg-[radial-gradient(circle_farthest-side,rgba(255,0,182,.15),rgba(255,255,255,0))]">
         </div>
         <div className="absolute bottom-0 right-[-20%] top-[-10%] h-[500px] w-[500px] rounded-full bg-[radial-gradient(circle_farthest-side,rgba(255,0,182,.15),rgba(255,255,255,0))]">
@@ -18,13 +17,11 @@ function App() {
 
       <div className="container mx-auto px-8">
         <Navbar />
-        <Routes>
-          <Route path="/" element={<Hero />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/technologies" element={<Technologies />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
+        <Hero />
+        <About />
+        <Technologies />
+        <Projects />
+        <Contact />
       </div>
     </>
   );
